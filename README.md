@@ -1,6 +1,6 @@
 # grunt-fay
 
-> Compile Fay code to JavaScript
+> Compile Haskell code to JavaScript using Fay
 
 ## Getting Started
 This plugin requires Grunt `~0.4.1`
@@ -35,55 +35,17 @@ grunt.initConfig({
 })
 ```
 
-### Options
-
-#### options.separator
-Type: `String`
-Default value: `',  '`
-
-A string value that is used to do something with whatever.
-
-#### options.punctuation
-Type: `String`
-Default value: `'.'`
-
-A string value that is used to do something else with whatever else.
 
 ### Usage Examples
 
-#### Default Options
-In this example, the default options are used to do something with whatever. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result would be `Testing, 1 2 3.`
+In this example, the file `hello_world.hs` in the `src` directory is compiled to `hello_world.js` in the `dest` directory.
 
 ```js
 grunt.initConfig({
   fay: {
-    options: {},
     files: {
-      'dest/default_options': ['src/testing', 'src/123'],
+      'dest/hello_world.js': 'src/hello_world.hs',
     },
   },
 })
 ```
-
-#### Custom Options
-In this example, custom options are used to do something else with whatever else. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result in this case would be `Testing: 1 2 3 !!!`
-
-```js
-grunt.initConfig({
-  fay: {
-    options: {
-      separator: ': ',
-      punctuation: ' !!!',
-    },
-    files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
-  },
-})
-```
-
-## Contributing
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
-
-## Release History
-_(Nothing yet)_

@@ -12,7 +12,7 @@ module.exports = function(grunt) {
   var async = require('async');
   var numCPUs = require('os').cpus().length;
 
-  grunt.registerMultiTask('fay', 'Compile Fay code to JavaScript', function() {
+  grunt.registerMultiTask('fay', 'Compile Haskell code to JavaScript with Fay', function() {
     var cb = this.async();
     var options = this.options();
 
@@ -49,7 +49,7 @@ module.exports = function(grunt) {
           return grunt.warn(
             'You need to have Fay installed and in your PATH for\n' +
             'this task to work. More info:\n' +
-            'https://github.com/gruntjs/grunt-contrib-sass'
+            'https://github.com/mkaemmerer/grunt-fay'
           );
         }
 

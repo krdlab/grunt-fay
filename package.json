@@ -1,23 +1,23 @@
 {
   "name": "grunt-fay",
-  "description": "Compile Fay code to JavaScript",
+  "description": "Compile Haskell code to JavaScript with Fay",
   "version": "0.1.0",
-  "homepage": "https://github.com/Matt/Fay",
+  "homepage": "https://github.com/mkaemmerer/grunt-fay",
   "author": {
     "name": "Matt Kaemmerer",
     "email": "matthew.kaemmerer@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/Matt/Fay.git"
+    "url": "https://github.com/mkaemmerer/grunt-fay.git"
   },
   "bugs": {
-    "url": "https://github.com/Matt/Fay/issues"
+    "url": "https://github.com/mkaemmerer/grunt-fay/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/Matt/Fay/blob/master/LICENSE-MIT"
+      "url": "https://github.com/mkaemmerer/grunt-fay/blob/master/LICENSE-MIT"
     }
   ],
   "main": "Gruntfile.js",
@@ -38,6 +38,6 @@
     "grunt": "~0.4.1"
   },
   "keywords": [
-    "gruntplugin"
+    "gruntplugin", "haskell", "fay", "compile"
   ]
 }
